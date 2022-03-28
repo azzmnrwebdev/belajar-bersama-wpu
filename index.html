@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- CDN Tailwind -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Customize -->
+    <!-- <script>
+        tailwind.config = {
+            
+        };
+    </script> -->
+
+    <title>Belajar Tailwind CSS</title>
+</head>
+
+<body class="dark:bg-slate-800 dark:text-slate-200">
+    <!-- Basic Utility -->
+    <h1 class="text-8xl font-bold text-center my-10">Mari Belajar <span
+            class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
+            TailwindCSS
+        </span></h1>
+
+    <section class="mb-10 bg-gradient-to-br from-indigo-200 via-red-400 to-yellow-300">
+        <h2 class="text-3xl text-center">Spacing</h2>
+        <div class="m-13">Margin</div>
+        <div class="py-8">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-200">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <div class="w-32 h-32 bg-custom">Kotak 1</div>
+    </section>
+
+    <section class="font-inter max-w-3xl mx-auto">
+        <h2 class="mb-2 text-4xl font-bold">Belajar Mengenai Typography pada TailwindCSS</h2>
+        <div class="mb-4 text-lg text-gray-500">
+            By <a href="#" class="text-gray-700 font-semibold">Muhammad Azzam</a>, 1 January 2022
+        </div>
+        <p class="mb-4">Lorem ipsum dolor sit amet, <a href="#"
+                class="underline font-semibold text-blue-600">consectetur</a>
+            adipisicing elit. Explicabo adipisci
+            omnis minus illum
+            veniam, sapiente temporibus accusamus quidem necessitatibus illo numquam cum voluptatem eveniet, debitis
+            distinctio molestiae facere nulla quas doloribus ipsam unde a quam odit. Neque odit consequuntur quo libero
+            nam ab? Perferendis provident non excepturi aliquam impedit veritatis!</p>
+        <blockquote class="mb-4 italic font-thin text-xl">"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dolorum repudiandae harum
+            sed omnis et
+            dignissimos accusantium voluptatibus dolorem minus velit."</blockquote>
+        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolore, omnis provident,
+            culpa placeat assumenda architecto, eos porro voluptate excepturi magni sit. Quidem ab voluptas possimus
+            vero exercitationem, dolore error!</p>
+    </section>
+
+    <div class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] overflow-y-scroll bg-fixed"
+        style="background-image: url('https://source.unsplash.com/1000x600?computer')">
+        <p class="p-5 text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ipsa consequuntur
+            adipisci fugiat atque vero, minima aliquam provident incidunt ad modi vel recusandae quos, culpa explicabo
+            eaque temporibus itaque. Eius ipsam sed reiciendis laboriosam nihil ipsa odio ducimus illo quod aliquid
+            corporis fuga possimus itaque nam consectetur, assumenda illum perferendis aspernatur animi earum! Fugiat
+            soluta ducimus, quibusdam ullam neque, mollitia nesciunt adipisci tenetur dolore itaque quis nemo autem odio
+            impedit iste aperiam laboriosam aspernatur tempore incidunt ipsum laudantium laborum explicabo dolorem eius.
+            Porro corrupti itaque provident incidunt nostrum voluptatum aliquid magnam vitae laboriosam velit quisquam
+            ad, nobis, sequi excepturi, at repudiandae? Quae omnis, at exercitationem tenetur, sed provident maiores
+            dolor voluptates debitis aut consequuntur! Incidunt laboriosam quasi at laborum nemo. Eaque perferendis enim
+            doloribus saepe totam maxime autem accusamus dolorem in similique aliquam laboriosam temporibus officia
+            neque quibusdam odit fugiat, omnis modi illum possimus molestiae fugit commodi, quisquam excepturi. Modi
+            obcaecati asperiores reprehenderit totam, earum deleniti quisquam, cum dolore blanditiis expedita
+            consequuntur reiciendis consequatur corrupti dolorem molestias ad qui quis quam magni minus accusamus
+            maiores quia, aut praesentium? Voluptates exercitationem, illum maxime ea ducimus nisi dignissimos nemo ab,
+            repellendus non obcaecati eum reprehenderit, quia voluptatibus. Dolorem laboriosam cum ipsam placeat.</p>
+    </div>
+
+    <div class="mt-14 max-w-xl mx-auto h-96 bg-teal-300 bg-cover bg-center rounded-3xl shadow-xl shadow-teal-200 overflow-hidden border-8 bg-blend-multiply"
+        style="background-image: url('https://source.unsplash.com/1000x600?laptop')">
+        <div class="w-full h-full bg-blue-300 mix-blend-darken"></div>
+    </div>
+
+    <div class="mt-14 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-3xl shadow-xl shadow-slate-300 overflow-hidden border-8 flex"
+        style="background-image: url('https://source.unsplash.com/1000x600?laptop')">
+        <div class="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-md rounded-full"></div>
+    </div>
+
+    <hr class="my-20">
+
+    <!-- Toggle Light or Dark -->
+    <div class="flex justify-center">
+        <span class="text-sm text-slate-500 mr-2">Light</span>
+        <input type="checkbox" id="toggle" class="hidden">
+        <label for="toggle">
+            <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+                <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+            </div>
+        </label>
+        <span class="text-sm text-slate-500 ml-2">Dark</span>
+    </div>
+
+    <!-- Pseudo Class dan Dark Mode -->
+    <button
+        class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-inter block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100">Simpan</button>
+
+    <div class="max-w-xl my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group
+        font-serif dark:bg-slate-300 dark:hover:bg-slate-100">
+        <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:group-hover:text-slate-900">
+            My Card</h5>
+        <p class="text-slate-600 group-hover:text-white selection:bg-lime-300 selection:text-slate-900 first-line:uppercase
+            first-line:tracking-widest
+            first-letter:text-7xl
+            first-letter:float-left
+            first-letter:mr-3 dark:group-hover:text-slate-900">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nesciunt harum? Ipsa consequatur saepe
+            voluptatem non quas reprehenderit iste, sint culpa unde. Veniam, accusamus maiores? Maxime omnis optio
+            distinctio? Hic dolorem incidunt nisi adipisci voluptatem animi molestiae ipsa, tenetur consectetur? Libero
+            inventore mollitia deleniti, commodi similique amet ipsa voluptatibus provident!</p>
+    </div>
+
+    <div class="max-w-xl border border-slate-200 rounded-xl mx-auto shadow-md font-inter p-5">
+        <form action="">
+            <label for="email">
+                <span
+                    class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-red-500 after:ml-0.5">Email</span>
+                <input type="email" id="email" placeholder="masukan email..." class="px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500
+                    invalid:text-red-700 invalid:focus:ring-red-700 invalid:focus:border-red-700 peer" />
+
+                <p class="text-sm m-1 text-red-700 invisible peer-invalid:visible">Email tidak valid</p>
+            </label>
+        </form>
+    </div>
+
+    <hr class="my-20">
+
+    <!-- Transform -->
+    <div class="w-40 h-40 mx-auto group">
+        <div
+            class="w-full h-full bg-pink-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 delay-1000">
+        </div>
+    </div>
+
+    <!-- Animation -->
+    <div class="w-40 h-40 bg-teal-500 mx-auto rounded-lg shadow-lg mt-20 animate-spin-slow"></div>
+    <div class="w-40 h-40 bg-teal-500 mx-auto rounded-lg shadow-lg mt-20 animate-goyang"></div>
+    <div class="w-40 h-40 bg-teal-500 mx-auto rounded-full shadow-lg mt-20 animate-ping"></div>
+    <div class="w-40 h-40 bg-teal-500 mx-auto rounded-full shadow-lg mt-20 animate-pulse"></div>
+    <div class="w-40 h-40 bg-teal-500 mx-auto rounded-full shadow-lg mt-20 animate-bounce"></div>
+
+    <hr class="my-20 border-t-4">
+
+    <!-- Layout -->
+    <!-- Container -->
+    <div class="container mx-auto">
+        <div class="border rounded-lg shadow-lg p-10 relative">
+            <div class="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 -right-5 cursor-pointer"><span
+                    class="m-auto">❌</span></div>
+            <img src="https://source.unsplash.com/1000x600?mountain" alt="gunung" width="200"
+                class="rounded-lg float-right ml-4 mb-0.5">
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quaerat
+                provident. Animi unde neque velit quasi vitae sequi. Quod natus corrupti corporis, ab totam autem
+                facilis cum accusantium animi delectus eligendi aliquid, similique eos? Odio placeat illum perspiciatis
+                eos nihil eligendi ut eum similique error? Quas aliquam distinctio pariatur recusandae, nihil
+                perspiciatis obcaecati voluptatibus odit sunt iste vel eum ducimus dolorum maxime expedita dolores,
+                assumenda ut fugiat accusantium aperiam incidunt? Rerum voluptas dolores nesciunt asperiores excepturi
+                voluptates harum pariatur cum enim inventore voluptate, error rem ab vero corrupti voluptatibus facere.
+                Aliquid nihil itaque illum odio voluptates? Delectus molestias dolores placeat!</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-20">
+        <div class="border rounded-lg shadow-lg p-10 relative">
+            <div class="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 -right-5 cursor-pointer"><span
+                    class="m-auto">❌</span></div>
+            <div class="w-10 h-10 bg-sky-200 rounded-full flex fixed bottom-5 right-5 cursor-pointer">
+                <a href="#" class="m-auto">🔝</a></div>
+            <img src="https://source.unsplash.com/1000x600?mountain" alt="gunung" width="200"
+                class="rounded-lg float-left mr-4 mb-0.5">
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quaerat
+                provident. Animi unde neque velit quasi vitae sequi. Quod natus corrupti corporis, ab totam autem
+                facilis cum accusantium animi delectus eligendi aliquid, similique eos? Odio placeat illum perspiciatis
+                eos nihil eligendi ut eum similique error? Quas aliquam distinctio pariatur recusandae, nihil
+                perspiciatis obcaecati voluptatibus odit sunt iste vel eum ducimus dolorum maxime expedita dolores,
+                assumenda ut fugiat accusantium aperiam incidunt? Rerum voluptas dolores nesciunt asperiores excepturi
+                voluptates harum pariatur cum enim inventore voluptate, error rem ab vero corrupti voluptatibus facere.
+                Aliquid nihil itaque illum odio voluptates? Delectus molestias dolores placeat!</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto border rounded-lg shadow-lg p-10 mt-20 columns-3">
+        <img src="https://source.unsplash.com/600x400" class="mb-4" alt="Image">
+        <img src="https://source.unsplash.com/600x400" class="mb-4" alt="Image">
+        <img src="https://source.unsplash.com/600x400" class="mb-4" alt="Image">
+        <img src="https://source.unsplash.com/600x400" class="mb-4" alt="Image">
+        <img src="https://source.unsplash.com/600x400" class="mb-4" alt="Image">
+        <img src="https://source.unsplash.com/600x400" class="mb-4" alt="Image">
+    </div>
+
+    <hr class="my-24 border-t-4">
+
+    <!-- Responsive Web Design -->
+    <div class="container px-6 font-inter max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-0">
+        <div class="lg:p-12 lg:flex-1">
+            <h3 class="text-4xl font-bold text-slate-800 sm:text-5xl md:text-6xl">Muhammad <span
+                    class="text-sky-500">Azzam</span></h3>
+            <img src="https://source.unsplash.com/1280x960?laptop" alt="laptop"
+                class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden">
+            <h2 class="mt-6 text-2xl font-semibold text-slate-800 sm:mt-8 sm:text-4xl">Mari Belajar Programming Bersama
+                WPU
+            </h2>
+            <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus, veniam totam?
+                Architecto sapiente tempore quas enim voluptate inventore possimus aperiam neque culpa esse cumque
+                reiciendis, aliquid voluptatum beatae incidunt, illum dolorum numquam tenetur veniam excepturi! Ipsam
+                quos
+                error possimus adipisci.</p>
+            <div class="mt-4 sm:mt-6">
+                <a href="#"
+                    class="inline-block px-5 py-3 bg-red-600 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base">Subscribe
+                    Channel
+                    Youtube</a>
+            </div>
+        </div>
+        <div class="hidden lg:flex lg:w-1/2">
+            <img src="https://source.unsplash.com/1280x960?laptop" alt="laptop" class="object-cover rounded-l-full">
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-700">My Gallery</h2>
+
+    <div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 bg-white sm:w-64 md:w-80 sm:mb-0 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+                    exercitationem sed vitae consectetur quae consequatur repudiandae minus doloribus ipsum ipsam?</p>
+            </div>
+        </div>
+
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 bg-white sm:w-64 md:w-80 sm:mb-0 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+                    exercitationem sed vitae consectetur quae consequatur repudiandae minus doloribus ipsum ipsam?</p>
+            </div>
+        </div>
+
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 bg-white sm:w-64 md:w-80 sm:mb-0 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+                    exercitationem sed vitae consectetur quae consequatur repudiandae minus doloribus ipsum ipsam?</p>
+            </div>
+        </div>
+
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 bg-white sm:w-64 md:w-80 sm:mb-0 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+                    exercitationem sed vitae consectetur quae consequatur repudiandae minus doloribus ipsum ipsam?</p>
+            </div>
+        </div>
+
+        <div class="rounded-md shadow-lg overflow-hidden mb-10 bg-white sm:w-64 md:w-80 sm:mb-0 lg:w-72">
+            <img src="https://source.unsplash.com/600x400" alt="Image Caption" class="w-full">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+                <p class="text-sm text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+                    exercitationem sed vitae consectetur quae consequatur repudiandae minus doloribus ipsum ipsam?</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Belajar Grid -->
+    <div class="mt-64 p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+        <h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span
+                class="self-center">Welcome to WPU</span>
+        </h2>
+        <div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"><span
+                class="self-end">@azzmnrwebdev</span>
+        </div>
+
+        <div
+            class="group grid-card">
+            <div
+                class="grid-card-img bg-[url('https://source.unsplash.com/640x480?gallery')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card md:col-start-3">
+            <div
+                class="grid-card-img bg-[url('https://source.unsplash.com/640x480?laptop')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card">
+            <div
+                class="grid-card-img bg-[url('https://source.unsplash.com/640x480?wallpapers')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card">
+            <div
+                class="grid-card-img bg-[url('https://source.unsplash.com/640x480?coding')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card">
+            <div
+                class="grid-card-img bg-[url('https://source.unsplash.com/640x480?fashion')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card md:col-start-2">
+            <div
+                class="grid-card-img bg-[url('https://source.unsplash.com/640x480?film')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card md:col-start-4">
+            <div
+                class="grid-card-img bg-[url('https://source.unsplash.com/640x480?travel')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card">
+            <div
+                class="grid-card-img bg-[url('https://source.unsplash.com/640x480?animals')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card md:col-start-3">
+            <div
+                class="grid-card-img bg-[url('https://source.unsplash.com/640x480?mountain')]">
+            </div>
+        </div>
+        <div
+            class="group grid-card md:col-start-3">
+            <div
+                class="grid-card-img bg-[url('https://source.unsplash.com/640x480?3drenders')]">
+            </div>
+        </div>
+    </div>
+
+    <h1>Hello WPU</h1>
+
+    <div class="mb-96"></div>
+
+    <script>
+        const checkbox = document.querySelector('#toggle')
+        const html = document.querySelector('html')
+
+        checkbox.addEventListener('click', function () {
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark')
+        })
+    </script>
+</body>
+
+</html>
